@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto py-10 px-4 sm:px-0">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-2">
           <div className="md:col-span-2">
-            <Logo className="text-6xl! mb-2" />
+            <Logo className="text-4xl! sm:text-6xl! mb-2" />
             <Typography variant="body" className="opacity-50">
               Your trusted source for cycling and running insights, training
               tips, news, and event updates to help athletes and enthusiasts
