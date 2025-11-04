@@ -8,7 +8,7 @@ export default async function EventsPage() {
   const events = await client.fetch(allEventsQuery);
 
   return (
-    <div className="container mx-auto px-4 sm:px-0">
+    <div className="container mx-auto px-4 sm:px-6">
       <Typography variant="h3" className="text-3xl font-bold mb-6">
         Events
       </Typography>

@@ -18,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <div className="container mx-auto py-4 px-4 sm:px-0 sm:py-6 relative">
+    <div className="container mx-auto py-4 px-4 sm:px-6 sm:py-6 relative">
       <header className="bg-gray-900 text-white shadow-md rounded-xl">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">

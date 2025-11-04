@@ -10,8 +10,8 @@ export default async function Home() {
   const events = await client.fetch(lastThreeEventsQuery);
 
   return (
-    <main className="px-4 sm:px-6">
-      <div className="container mx-auto">
+    <main className="container mx-auto">
+      <div className="px-4 sm:px-6">
         <Carousel slides={posts} className="mb-6 sm:mb-20" />
         <section>
           <Typography variant="body" className="text-2xl! sm:text-3xl! font-bold mb-2 sm:mb-6">Events</Typography>

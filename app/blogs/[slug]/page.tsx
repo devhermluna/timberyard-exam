@@ -12,10 +12,10 @@ export default async function BlogPost({ params }: Props) {
   const { slug } = await params;
   const blog = await client.fetch(singlePostQuery, { slug });
 
-  if (!blog) return <div className="container mx-auto">Blog not found.</div>;
+  if (!blog) return <div className="container mx-auto px-4 sm:px-6">Blog not found.</div>;
 
   return (
-    <div className="container mx-auto px-4 sm:px-0">
+    <div className="container mx-auto px-4 sm:px-6">
       <Image
         src={blog.mainImage}
         alt={blog.title}
