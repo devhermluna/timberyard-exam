@@ -19,8 +19,8 @@ export default function ImageText({
 }: Props) {
   return (
     <>
-      <Image src={image} alt={alt} />
-      <div className="absolute sm:bottom-12 sm:left-12 sm:right-12 z-10">
+      <Image src={image} alt={alt} className="object-cover object-top w-full! h-full!" />
+      <div className="absolute bottom-4 sm:bottom-12 left-4 sm:left-12 right-4 sm:right-12 z-10">
         <Typography variant="h4">
           {title}
         </Typography>
