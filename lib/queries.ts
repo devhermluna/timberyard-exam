@@ -10,7 +10,7 @@ export const allPostsQuery = `
     slug,
     mainImage,
     publishedAt
-  } | order(publishedAt desc)
+  } | order(publishedAt asc)
 `;
 
 export const lastSixPostsQuery = `
