@@ -5,7 +5,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Author, SanityImage } from "../interfaces/Sanity";
+import { Author, SanityImage, SanitySlug } from "../interfaces/Sanity";
 import ImageText from "./ImageText";
 import clsx from "clsx";
 
@@ -13,6 +13,7 @@ interface Slide {
   mainImage: SanityImage;
   title: string;
   author: Author;
+  slug: SanitySlug;
 }
 
 interface Props {
@@ -35,7 +36,7 @@ const Carousel = ({ slides, className }: Props) => {
         {slides.map((slide, index) => (
           <SwiperSlide>
             <div className="h-[250px] md:h-[500px] lg:h-[700px] text-white relative">
-              <ImageText title={slide.title} subtitle={slide.author.name} image={slide.mainImage} alt={slide.mainImage.alt || `Slide ${index + 1}`} />
+              <ImageText title={slide.title} subtitle={slide.author.name} image={slide.mainImage} alt={slide.mainImage.alt || `Slide ${index + 1}`} slug={slide.slug} />
               <div className="absolute inset-0 bg-linear-to-t from-black/50 via-black/10 to-transparent"></div>
             </div>
           </SwiperSlide>

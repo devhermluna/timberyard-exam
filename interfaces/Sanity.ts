@@ -4,6 +4,11 @@ export interface Author {
   image: SanityImage;
 }
 
+export interface SanitySlug {
+  _type: 'slug';
+  current: string;
+}
+
 export interface SanityImage {
   _type: "image";
   alt?: string;
