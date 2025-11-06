@@ -45,7 +45,7 @@ export const singlePostQuery = `
 `;
 
 export const allEventsQuery = `
-  *[_type == "event"]{
+  *[_type == "event" && endDate >= now()]{
     _id,
     "author": author->{
       name,
@@ -78,7 +78,7 @@ export const singleEventQuery = `
 `;
 
 export const lastThreeEventsQuery = `
-  *[_type == "event"] | order(startDate asc)[0...3]{
+  *[_type == "event" && endDate >= now()] | order(startDate asc)[0...3]{
     _id,
     "author": author->{
       name,
